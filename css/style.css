@@ -231,6 +231,40 @@ article i {
     height: 32px;
 }
 
+/* project section */
+
+.projects {
+    position: relative;
+}
+
+.projects-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0rem;
+}
+
+.boxs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boxs-container .box {
+    width: 30%;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxs-container .box img {
+    width: 100%;
+    height: 100%;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -290,6 +324,10 @@ article i {
         margin-top: 2rem;
         padding-top: 2rem;
     }
+    
+    .projects-container {
+        width: 90%;
+    }
 }
 
 @media(max-width: 900px) {
@@ -314,6 +352,11 @@ article i {
         gap: 1rem;
         justify-content: center;
         align-items: center;
+    }
+
+    .boxs-container .box{
+        width: 45%;
+        margin-bottom: 40px;
     }
 }
 
@@ -375,67 +418,27 @@ article i {
     .experience-details-container {
         width: 85%;
     }
+
+    .boxs-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxs-container .box{
+        width: 70%;
+    }
 }
 
 @media(max-width: 550px) {
     .about .about-container .about-image img {
-        width: 340px;
+        width: 300px;
     }
 
     .skills-containers {
         flex-wrap: wrap;
     }
+
+    .boxs-container .box{
+        width: 80%;
+    }
 }
-
-/* @media(max-width: 870px) {
-    header nav .nav-links {
-        position: absolute;
-        top: 100%;
-        right: -420px;
-        flex-direction: column;
-        background-color: #808080;
-        width: 50%;
-        height: auto;
-        text-align: center;
-        padding: 20px 0;
-        color: white;
-    }
-
-    header nav .nav-links li a {
-        color: white;
-    }
-
-    header nav .nav-links li a:hover {
-        color: white;
-        text-decoration: underline;
-        text-underline-offset: 1rem;
-    }
-
-    header nav .nav-links.active {
-        right: 0px;
-        transition: 0.3s;
-    }
-
-    #btn-menu {
-        display: block;
-        color: black;
-        font-size: 30px;
-    }
-
-
-    .home .home-container {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        gap: 2rem;
-        padding: 3rem 1rem;
-    }
-
-    .home .home-container .home-image {
-        grid-area: 1/1/2/2;
-    }
-
-    .home-content {
-        align-items: baseline;
-    }
-} */
