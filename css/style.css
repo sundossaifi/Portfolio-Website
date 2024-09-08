@@ -57,6 +57,11 @@ header nav .nav-links li a:hover {
     text-underline-offset: 1rem;
 }
 
+span {
+    color: #808080;
+}
+
+
 /* section */
 
 section {
@@ -164,16 +169,12 @@ section {
     padding-top: 2rem;
 }
 
-.about .about-container .about-content span {
-    color: #808080;
-}
-
 .about .about-container .about-content>p {
     color: black;
 }
 
 /* Skills section */
-#skills {
+.skills {
     position: relative;
     flex-direction: column;
     background-color: #f5f5f5;
@@ -244,7 +245,7 @@ article i {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 4rem 0rem;
+    margin-top: 4rem;
 }
 
 .boxs-container {
@@ -265,6 +266,62 @@ article i {
     height: 100%;
 }
 
+/* Contact Section */
+
+.contact {
+    position: relative;
+    background: #f5f5f5;
+}
+
+.contact-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.contact form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form input {
+    width: 48%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact form textarea {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    ;
+    border-color: rgb(163, 163, 163);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact form textarea:focus,
+.contact form input:focus {
+    border-color: rgb(53, 53, 53);
+}
+
+.contact form button {
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -277,7 +334,7 @@ article i {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: fit-content;
     border-radius: 1rem;
 }
 
@@ -324,9 +381,17 @@ article i {
         margin-top: 2rem;
         padding-top: 2rem;
     }
-    
-    .projects-container {
+
+    .projects .projects-container {
         width: 90%;
+    }
+
+    .contact .contact-container {
+        width: 90%;
+    }
+
+    .contact form {
+        width: 70%;
     }
 }
 
@@ -354,9 +419,13 @@ article i {
         align-items: center;
     }
 
-    .boxs-container .box{
+    .boxs-container .box {
         width: 45%;
         margin-bottom: 40px;
+    }
+
+    .contact form {
+        width: 80%;
     }
 }
 
@@ -424,7 +493,7 @@ article i {
         align-items: center;
     }
 
-    .boxs-container .box{
+    .boxs-container .box {
         width: 70%;
     }
 }
@@ -438,7 +507,17 @@ article i {
         flex-wrap: wrap;
     }
 
-    .boxs-container .box{
+    .boxs-container .box {
         width: 80%;
+    }
+
+    .contact form {
+        width: 90%;
+        justify-content: center;
+
+    }
+
+    .contact form input {
+        width: 100%;
     }
 }
