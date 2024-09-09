@@ -79,26 +79,29 @@ section {
 /* Home Section  */
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../assets/background.svg);
     background-position: center;
 }
 
-.home .home-container {
+.home-container {
+    width: 85%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
 }
 
 .home .home-container .home-image {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
 }
 
 .home .home-container .home-image img {
-    width: min(25rem, 90%);
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
 }
 
@@ -142,11 +145,6 @@ section {
 }
 
 /* About Section */
-
-.about-title {
-    font-size: 3rem;
-}
-
 .about {
     display: flex;
     justify-content: center;
@@ -159,6 +157,10 @@ section {
     justify-content: center;
     gap: 4rem;
     margin: auto;
+}
+
+.about .about-container .title {
+    text-align: start;
 }
 
 .about .about-container .about-image img {
@@ -435,6 +437,10 @@ article i {
 /* Responsive */
 
 @media(max-width: 1200px) {
+    .home-container {
+        width: 90%;
+    }
+
     .about .about-container {
         width: 90%;
     }
@@ -476,6 +482,20 @@ article i {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .home .home-container .home-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    home-content p {
+        font-weight: 500;
     }
 
     .about {
@@ -524,20 +544,10 @@ article i {
         font-size: 30px;
     }
 
-    .home .home-container {
+    .home-container {
         flex-direction: column;
-        text-align: center;
-        justify-content: center;
+        margin-top: 6rem;
         gap: 2rem;
-        padding: 3rem 1rem;
-    }
-
-    .home .home-container .home-image {
-        grid-area: 1/1/2/2;
-    }
-
-    .home-content {
-        align-items: baseline;
     }
 
     .about .about-container .about-image img {
@@ -581,6 +591,24 @@ article i {
 }
 
 @media(max-width: 550px) {
+    .home .home-container .home-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    home-content p {
+        font-weight: 400;
+    }
+
+    .section-content-p2 {
+        font-size: 1.5rem;
+    }
+
     .about .about-container .about-image img {
         width: 300px;
     }
