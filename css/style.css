@@ -19,7 +19,7 @@ header {
 }
 
 p {
-    color: #808080;
+    color: rgb(201, 0, 0);
 }
 
 #btn-menu {
@@ -58,8 +58,13 @@ header nav .nav-links li a:hover {
 }
 
 span {
-    color: #808080;
+    color: rgb(201, 0, 0);
 }
+
+.logo span {
+    color: rgb(210, 189, 189);
+}
+
 
 
 /* section */
@@ -338,9 +343,12 @@ article i {
     border-radius: 1rem;
 }
 
-.btn2-color,
-.btn1-color {
+.btn2-color {
     border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn1-color {
+    border: rgb(201, 0, 0) 0.1rem solid;
 }
 
 .btn2-color:hover,
@@ -348,14 +356,19 @@ article i {
     cursor: pointer;
 }
 
-.btn2-color,
-.btn1-color:hover {
+.btn2-color {
     background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn1-color:hover {
+    background: rgb(201, 0, 0);
     color: white;
 }
 
 .btn2-color:hover {
     background: rgb(0, 0, 0);
+    border: white 0.1rem solid;
 }
 
 .btn1-color:hover {
@@ -498,16 +511,6 @@ article i {
         text-align: center;
         padding: 20px 0;
         color: white;
-    }
-
-    header nav .nav-links li a {
-        color: white;
-    }
-
-    header nav .nav-links li a:hover {
-        color: white;
-        text-decoration: underline;
-        text-underline-offset: 1rem;
     }
 
     header nav .nav-links.active {
