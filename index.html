@@ -5,10 +5,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>Sundos Saifi</span></a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div class="home-container">
+                <div class="home-image">
+                    <img src="assets/profileimage.png" alt="sundos profile image">
+                </div>
+                <div class="home-content">
+                    <p class="section-content-p1">Hello, I'm</p>
+                    <h1 class="title">Sundos Saifi</h1>
+                    <p class="section-content-p2">Frontend Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn1-color" onclick="window.open('assets/sundossaificv.pdf')">
+                            Download CV
+                        </button>
+                        <button class="btn btn2-color" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sundos.alsaifi" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/sundossaifi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sundos-saifi-557420262/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/profileimage3.jpg" alt="sundos saifi image">
+                </div>
+                <div class="about-content">
+                    <div>
+                        <p>
+                            Get To Know More
+                        </p>
+                        <h1 class="title">About <span>Me</span></h1>
+                    </div>
+                    <p class="about-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                        excepturi doloremque amet natus
+                        perspiciatis aliquam vitae? Nisi rem sit a, facilis iusto ullam ut cumque atque quisquam aut
+                        consequatur exercitationem?Nisi rem sit a, facilis iusto ullam ut cumque atque quisquam aut
+                        consequatur exercitationem
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn2-color">
+                            Contact Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <p class="section-content-p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="skills-containers">
+                    <div class="skill-details">
+                        <h2 class="skill-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <h2 class="skill-sub-title">iOS Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>Swift</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>UI-Kit</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>Swift-UI</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>Alamofire</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <h3>URL Session</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <div>
+                    <p class="section-content-p1">Explore My</p>
+                    <h1 class="title">Latest <span>Projects</span></h1>
+                </div>
+                <div class="boxs-container">
+                    <div class="box">
+                        <img src="assets/project1.jpg" alt="project picture">
+                    </div>
+                    <div class="box">
+                        <img src="assets/project2.jpg" alt="project picture">
+                    </div>
+                    <div class="box">
+                        <img src="assets/project3.jpg" alt="project picture">
+                    </div>
+                    <div class="box">
+                        <img src="assets/project4.jpg" alt="project picture">
+                    </div>
+                    <div class="box">
+                        <img src="assets/project5.png" alt="project picture">
+                    </div>
+                    <div class="box">
+                        <img src="assets/project6.png" alt="project picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div>
+                    <p class="section-content-p1">Get in Touch</p>
+                    <h1 class="title">Contact <span>Me</span></h1>
+                </div>
 
+                <form action="">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn btn2-color">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="upper-container">
+                <div class="personal-info">
+                    <h2>Sundos Saifi</h2>
+                    <p>
+                        A Frontend focused Web Developer building the Frontend of Websites
+                        and Web Applications that leads to the success of the overall
+                        product
+                    </p>
+                </div>
+                <div class="social-info">
+                    <h2>Social</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sundos.alsaifi" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/sundossaifi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sundos-saifi-557420262/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-container">
+                <p>&copy; 2024 Sundos Saifi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let btnMenu = document.getElementById("btn-menu")
+        let navLinks = document.querySelector(".nav-links")
+
+        btnMenu.onclick = function () {
+            btnMenu.classList.toggle("fa-times")
+            navLinks.classList.toggle("active")
+        }
+    </script>
 </body>
 
 </html>
